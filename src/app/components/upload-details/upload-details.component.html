@@ -1,0 +1,25 @@
+<div style="margin-top: 10px;" class="row">
+  <div class="col-2">
+    <a href="{{ fileUpload.url }}">{{ fileUpload.name }}</a>
+  </div>
+  <div class="col-2">
+    <span style="margin-left: 5%;">Viewed: {{fileUpload.expired ? 'Yes': 'No'}}</span>
+  </div>
+  <div class="col-5">
+    <span style="margin-left: 5%;">User ID: {{fileUpload.userId}} | Rec Num: {{fileUpload.recordNumber}} | Status: {{fileUpload.status}}</span>
+  </div>
+  <div class="col-3">
+    <button (click)="deleteFileUpload(fileUpload)"
+      class="btn btn-danger btn-sm" style="float: right; margin-left: 5px;">
+      Delete
+    </button>
+    <button *ngIf="fileUpload.expired" (click)="activateFile(fileUpload)"
+      class="btn btn-primary btn-sm" style="float: right">
+      Activate
+    </button>
+    <button *ngIf="!fileUpload.expired" disabled (click)="activateFile(fileUpload)"
+      class="btn btn-primary btn-sm" style="float: right">
+      Activate
+    </button>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div style="margin-top: 10px;" class="row">
+    <div class="col-2">
+      <span style="margin-left: 5%;">ID: {{poll.id}}</span>
+    </div>
+    <div class="col-4">
+      <span style="margin-left: 5%;">Name: {{poll.name}}</span>
+    </div>
+    <div class="col-6">
+      <button (click)="deletePoll(poll)"
+        class="btn btn-danger btn-sm" style="float: right; margin-left: 5px;">
+        Delete
+      </button>
+      <button (click)="showCertificates(poll)"
+        class="btn btn-warning btn-sm" style="float: right; margin-left: 5px;">
+        Show Certificates
+      </button>
+      <button (click)="copyLink()"
+        class="btn btn-primary btn-sm" style="float: right; margin-left: 5px;">
+        Copy Link
+      </button>
+    </div>
+  </div>
+  
