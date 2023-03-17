@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-15-firebase-storage'`, () => {
+  it(`should have as title 'certificat1ka'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-15-firebase-storage');
+    expect(app.title).toEqual('certificat1ka');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-15-firebase-storage app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('certificat1ka app is running!');
   });
 });

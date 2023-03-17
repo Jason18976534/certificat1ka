@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-15-firebase-storage": {
+    "certificat1ka": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-15-firebase-storage",
+            "outputPath": "dist/certificat1ka",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -36,7 +36,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-15-firebase-storage:build:production"
+              "browserTarget": "certificat1ka:build:production"
             },
             "development": {
-              "browserTarget": "angular-15-firebase-storage:build:development"
+              "browserTarget": "certificat1ka:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-15-firebase-storage:build"
+            "browserTarget": "certificat1ka:build"
           }
         },
         "test": {
